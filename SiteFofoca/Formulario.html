@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Fofoca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+    <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<!-- Duas colunas de anuncio e uma de conteudo -->
+
+<body>
+    <Header>
+        <div class="menu-bg">
+            <div class="menu">
+                <nav classe="nav_principal">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label><!--.checkbtn-->
+                    <a href="index.html"> <img src="img/logo.png" alt="Logo" class="logo"></a>
+                    <ul class="nav__list" id="list">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+
+                    </ul>
+                </nav> <!-- nav -->
+            </div> <!--.menu-->
+        </div> <!--.menu-bg-->
+        <h1 Class="intro">CADASTRE-SE</h1>
+        <div id="destaque"></div>
+    </Header>
+
+    <hr>
+
+    <article id="article">
+        
+        
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required> <br />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br />
+
+                <label for="interesse">Qual conteúdo mais te
+                    interessa?</label><br />
+                <select id="interesse" name="interesse">
+                    <option value="famosos">outros</option>
+                    <option value="tv">Amicão</option>
+                    <option value="cinema">Pobres Humanos</option>
+                    <option value="outros">Gatices</option><br />
+                </select><br />
+
+                <label for="termos_uso">Concordo com
+                    os termos de uso</label>
+                <input type="checkbox" id="termos_uso" name="termos_uso" required><br />
+                <label for="envio_email">Aceito
+                    o envio de emails</label>
+                <input type="checkbox" id="envio_email" name="envio_email" checked></br />
+                <input type="submit" value="Enviar" class="input__bottom">
+            </form>
+       
+    </article>
+    
+
+
+
+
+
+
+
+
+
+
+    <hr>
+
+   
+</body>
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-c">
+        <div class="footer__contatos">
+            <h2>Apoio:</h2>
+            <img src="img/soulcode.jpg" alt="">
+            <p>Siga nas redes sociais!</p>
+            <div class="footer__redes-socias">
+                <a href="https://www.instagram.com/soulcodeacademy/" class="footer-link " id="instagram"
+                    target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/soulcodeacademy/" class="footer-link " id="linkedin"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                </a>
+                <a href="https://soulcode.com/" class="footer-link" id="site" target="_blank">
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                </a>
+            </div><!-- footer__redes-socias -->
+        </div><!--footer__contatos -->
+        <ul class="footer__list">
+            <li>
+                <h3>Saiba mais sobre o projeto:</h3>
+            </li>
+            <li>
+                <a href="" class="footer__link" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="#" class="footer__link" target="_blank">Trelo</a>
+            </li>
+        </ul><!--footer__list -->
+        <ul class="footer__list">
+            <li>
+                <h3>Conheça os Desenvolvedores:</h3>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/thayana-sampaio-91257a161/" class="footer__link "
+                    target="_blank">Thayana Sampaio</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/erick-rodrigo-s-mendon%C3%A7a-110495211" class="footer__link"
+                    target="_blank">Erick Rodrigo</a>
+            </li>
+            <li>
+                <a href="#" class="footer__link" target="_blank">Acássio</a>
+            </li>
+        </ul><!--footer__list -->
+        <div id="footer_dicas">
+            <h3>Fale Conosco:</h3>
+            <p>
+                Para mais informações deixe seu email que entraremos em contato.
+            </p>
+            <div id="input__dicas">
+                <input type="email" id="email " placeholder="Digite seu e-mail aqui">
+                <button>
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                </button>
+            </div><!--#input__dicas-->
+        </div><!--footer_dicas-->
+    </div> <!-- .footer-c -->
+    <div id="footer_copyrigth">
+        &#169 Projeto CSS III - Desafio Final para o Bootcamp Salesforce SF-8 da SoulCode.
+    </div><!-- #footer_copyrigth -->
+</footer>
+
+</html>

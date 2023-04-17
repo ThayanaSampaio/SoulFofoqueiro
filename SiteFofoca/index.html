@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Fofoca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+    <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<!-- Duas colunas de anuncio e uma de conteudo -->
+
+<body>
+    <Header>
+        <div class="menu-bg">
+            <div class="menu">
+                <nav classe="nav_principal">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label><!--.checkbtn-->
+                    <a href="index.html"> <img src="img/logo.png" alt="Logo" class="logo"></a>
+                    <ul class="nav__list" id="list">
+                        <li><a href="#destaque" class="nav__link">Destaque</a></li>
+                        <li><a href="#fofocao" class="nav__link"> fofoCÃO</a></li>
+                        <li><a href="#snapcat" class="nav__link"> SnapCat</a></li>
+                        <li><a href="#humanices" class="nav__link">Humanices</a></li>
+                        <li><a href="#cadastre-se" class="nav__link">Cadastre-se</a></li>
+                    </ul>
+                </nav> <!-- nav -->
+            </div> <!--.menu-->
+        </div> <!--.menu-bg-->
+        <h1 Class="intro">Site de fofoca, <br /> para saber do seu pet</h1>
+        <div id="destaque"></div>
+    </Header>
+
+    <hr>
+
+    <section class="destaque">
+        <h2 class="section__titulos">Destaques do dia</h2>
+      
+        <div class="container">
+          <button class="arrow-left control" aria-label="Previous image">◀</button>
+          <button class="arrow-right control" aria-label="Next Image">▶</button>
+          <div class="gallery-wrapper">
+            <div class="gallery">
+              <!--       <div class="item current-item cyan"></div>
+              <div class="item deeppink"></div>
+              <div class="item turquoise"></div>
+              <div class="item darkblue"></div>
+              <div class="item purple"></div> -->
+              <img src="img/1.jpg" alt="Beach Image" class="item current-item">
+              <img src="img/2.jpg" alt="Animal Image" class="item current-item">
+              <img src="img/3.jpg" alt="Street Image" class="item current-item">
+              <img src="img/4.jpg" alt="Zoo Image" class="item current-item">
+              <img src="img/5.jpg" alt="Model Image" class="item current-item">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="fofocao"></div>
+    </section> <!--.destaque -->
+
+    <hr>
+
+    <section class="fofocao">
+        <h2 class="section__titulos">fofoCÃO</h2>
+        <div class="fofocao-c">
+            <div class="fofocao__noticia">
+                <img class="fofocao__img" src="img/3.jpeg" alt="">
+                <h3 class="fofocao__titulo">Saiba mais sobre Valentina</h3>
+                <p class="fofocao__descricao">Passa o dia na janela olhando a vida dos outros. O melhor amigo dela é o gato,
+                    mas só na cabeça dela. Detesta porta fechada e vive pedindo pra abrir.</p>
+            </div><!--.fofocao__noticia-->
+            <div class="fofocao__noticia">
+                <img class="fofocao__img" src="img/pitu.jpeg" alt="">
+                <h3 class="fofocao__titulo">Quatro Segredos do Pituquinha</h3>
+                <p class="fofocao__descricao">
+                    •Só é dócil quando quer <br>
+                    •Gosta de milho verde<br>
+                    •Já voou da gaiola pra tomar banho de piscina<br>
+                    •um bom malandro.</p>
+            </div><!--.fofocao__noticia-->
+            <div class="fofocao__noticia">
+                <img class="fofocao__img" src="img/chiquinho.jpeg" alt="">
+                <h3 class="fofocao__titulo">Chiquinho, fujão e ladrão.</h3>
+                <p class="fofocao__descricao">Chiquinho sempre fugia no horário de comer ração e não queria comer a era colocada 
+                    no pote para ele. Um certo dia o vizinho veio até contou que ele estava 
+                    indo na casa dele e roubando a ração do gatinho que morava lá. </p>
+            </div><!--.fofocao__noticia-->
+        </div><!--.fofocao-c-->
+        <div id="snapcat"></div>
+    </section><!--.fofocao-->
+
+    <hr>
+
+    <section class="snapcat">
+        <h2 class="section__titulos">SnapCAT</h2>
+        <div class="snapcat-c">
+            <div class="snapcat__noticia">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vUF7IyvFMMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="snapcat__titulo">Pai de Gatito pede DNA</h3>                
+            </div><!--.snapcat__noticia-->
+            
+            <div class="snapcat__noticia">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2Giw_GDmYo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="snapcat__titulo">Gatices em Primeira Mão</h3>
+                 </div><!--.snapcat__noticia-->
+            <div class="snapcat__noticia">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CETUQ1ON7kQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="snapcat__titulo">Treine seu gato com Pesca Screen</h3>
+                
+            </div><!--.snapcat__noticia-->
+        </div><!--.snapcat-c-->
+        <div id="humanices"></div>
+    </section><!--.snapcat-->
+
+    <hr>
+
+
+    <section class="humanices">
+        <h2 class="section__titulos">Humanices</h2>
+        <section class="humanices-c">
+            <div class="humanice">
+                <h2 class="humanice__titulo">Humana reclama do seu gato</h2>
+                <p class="humanice__descricao">Uma vez ela pegou um passarinho e estraçalhou o 
+                    coitado debaixo da minha cama, minha mãe ficou com fera com ela.
+                    E outra vez ela caiu dentro de um balde com água e não deu nenhum miado, 
+                    ela acabou saindo sozinha e toda ensopada<br>
+                    <span class="humanice__clik">Veja mais<a href="#"></a></span>
+                </p><!--.humanice__descricao-->
+            </div><!--.humanice-->
+            <div class="humanice">
+                <h2 class="humanice__titulo">O que Clarinha deseja?</h2>
+                <p class="humanice__descricao">Clarinha é corajosa o suficiente para abrir seu coração e falar 
+                    sobre suas necessidades. Ela reconhece que não é fácil expor suas fraquezas, 
+                    mas sabe que é importante para sua própria vida e faz apresentação comovente. <br>
+                    <article class="humanice__clik"><a href="Noticia.html" target="_blank">Veja mais</a></article>
+                </p><!--.humanice__descricao-->
+            </div><!--.humanice-->
+            <div class="humanice">
+                <h2 class="humanice__titulo">ATENÇÃO! FLORA DESAFIA CONVENÇÕES E FREQUENTA BARES!</h2>
+                <p class="humanice__descricao">Flora, a cachorrinha de 8 anos, 
+                    está dando o que falar! Ela é conhecida por ser total flex, comendo tudo o que vê pela 
+                    frente e amando um passeio. 
+                    Mas isso não é tudo! Flora está desafiando as convenções sociais e frequentando bares, 
+                    mesmo sendo menor de idade.<br>
+                    <span class="humanice__clik">Veja mais <a href="#"></a></span>
+                </p><!--.humanice__descricao-->
+            </div><!--.humanice-->
+            <div class="humanice">
+                <h2 class="humanice__titulo">BOMBA! LINDINHA RECUSA COMER NA VASILHA E PREFERE BANANA!</h2>
+                <p class="humanice__descricao">A cachorrinha Lindinha está causando polêmica ao recusar 
+                    a comer na vasilha e sempre derrubar a ração no chão. 
+                    Para comer, ela prefere o chão e não a vasilha, deixando 
+                    claro para o seu dono que não irá aceitar comida de outra forma.                  
+                    
+                    Essa cachorrinha definitivamente tem uma personalidade forte e diferente. 
+                    Será que ela tem uma alma de sapo e macaco, como sugere o seu dono? .<br>
+                    <span class="humanice__clik">Veja mais <a href="#"></a></span>
+                </p><!--.humanice__descricao-->
+            </div><!--.humanice-->
+            <div class="humanice">
+                <h2 class="humanice__titulo">Maya reclama com sua Humana</h2>
+                <p class="humanice__descricao">Maya, a gata gordinha, tem causado muitas brigas com sua 
+                    dona por causa de comida e por não gostar de ser contrariada. 
+                    Além disso, ela reclama constantemente da vida e não está disposta 
+                    a mudar seus hábitos sedentários. Apesar de sua fofura, sua personalidade 
+                    barulhenta pode causar muitos problemas em casa. <br>
+                    <span class="humanice__clik">Veja mais <a href="#"></a></span>
+                </p><!--.humanice__descricao-->
+            </div><!--.humanice-->
+            <div class="humanice">
+                <h2 class="humanice__titulo">Kim sabe de tudo sobre a vida alheia!</h2>
+                <p class="humanice__descricao">Kim é uma gata fofoqueira que adora 
+                    ficar na janela observando e comentando sobre a vida dos vizinhos. 
+                    Ela é muito carismática e adorada por todos, mas suas atitudes 
+                    intrometidas podem causar problemas para aqueles que preferem 
+                    manter sua vida em segredo. Se você gosta de compartilhar seus 
+                    segredos e adora um bom bate-papo, Kim é a companhia perfeita para você! <br>
+                    <span class="humanice__clik">Veja mais <a href="#"></a></span>
+                </p><!--.humanice__descricao-->
+            </div><!--.humanice-->
+        </section><!--.humanices-c-->
+        <div id="cadastre-se"></div>
+    </section><!--.humanices-->
+
+    <hr>
+
+    <section class="cadastre-se">
+        <div class="cadastro-c">
+            <div class="cadastro-info">
+                <h2 class="cadastro__titulo">CADASTRE-SE</h2>
+                <P class="cadastro__descrição">Seu cadastro permitirá que você tenha acesso a todas as nossas notícias,
+                    curiosidades e fotos dos pets mais famosos da SoulCode. <br> Venha fazer parte da nossa comunidade
+                    que mostra vida dos pets!</P>
+            </div><!--.cadastro-info-->
+            <button class="cadastro__bottom"><a href="Formulario.html" target="_blank"> Inscreva-se</a></button>
+        </div><!--.cadastro-c-->
+    </section><!--.cadastre-se-->
+</body>
+
+<footer>
+    <div class="footer-c">
+        <div class="footer__contatos">
+            <h2>Apoio:</h2>
+            <img src="img/soulcode.jpg" alt="">
+            <p>Siga nas redes sociais!</p>
+            <div class="footer__redes-socias">
+                <a href="https://www.instagram.com/soulcodeacademy/" class="footer-link " id="instagram" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/soulcodeacademy/" class="footer-link " id="linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                </a>
+                <a href="https://soulcode.com/" class="footer-link" id="site" target="_blank">
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                </a>
+            </div><!-- footer__redes-socias -->
+        </div><!--footer__contatos -->
+        <ul class="footer__list">
+            <li>
+                <h3>Saiba mais sobre o projeto:</h3>
+            </li>
+            <li>
+                <a  href="" class="footer__link" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://trello.com/invite/b/bn3ugRlk/ATTIdd707e03160ebd58fdbd620d899a5d46010C8ED5/fofoquinha" class="footer__link"  target="_blank">Trelo</a>
+            </li>
+        </ul><!--footer__list -->
+        <ul class="footer__list">
+            <li>
+                <h3>Conheça os Desenvolvedores:</h3>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/thayana-sampaio-91257a161/" class="footer__link "  target="_blank">Thayana Sampaio</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/erick-rodrigo-s-mendon%C3%A7a-110495211" class="footer__link"  target="_blank">Erick Rodrigo</a>
+            </li>
+            <li>
+                <a href="#" class="footer__link"  target="_blank">Acássio</a>
+            </li>
+        </ul><!--footer__list -->
+        <div id="footer_dicas">
+            <h3>Fale Conosco:</h3>
+            <p>
+                Para mais informações deixe seu email que entraremos em contato.
+            </p>
+            <div id="input__dicas">
+                <input type="email" id="email " placeholder="Digite seu e-mail aqui">
+                <button>
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                </button>
+            </div><!--#input__dicas-->
+        </div><!--footer_dicas-->
+    </div> <!-- .footer-c -->
+    <div id="footer_copyrigth">
+        &#169 Projeto CSS III - Desafio Final para o Bootcamp Salesforce SF-8 da SoulCode.
+    </div><!-- #footer_copyrigth -->
+</footer>
+
+</html>

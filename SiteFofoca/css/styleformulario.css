@@ -1,0 +1,582 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+
+
+:root {
+	--ff-primary: "Nunito", Helvetica, Arial, Sans-serif;
+	--ff-secondary: "Inter", sans-serif;
+	--clr-bluegreen-dark: #0f637b;
+	--clr-green-dark: #171717;
+	--clr-green-dark: #049A40;
+	--clr-green-ligth: #0BF96A;
+	--clr-pink-dark: #E10BF9;
+	--clr-pink-ligth: #F3A0FD;
+	--clr-white: #F5F5F5;
+
+}
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+body {
+	/* background-image: url("../img/corpo.jpg");
+    background-size: auto; */
+
+	background-color: var(--clr-white);
+	font-family: var(--ff-primary);
+}
+
+a,
+a:hover,
+/*mouse sobre*/
+a:active,
+/*link cliclado*/
+a:link,
+/*link não visitado*/
+a:visited
+
+/*link visitado*/
+	{
+	text-decoration: none;
+	color: black;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+hr {
+	border: none;
+	background-color: var(--clr-pink-dark);
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+}
+
+p {
+	line-height: 21.82px;
+	padding: 0 10px;
+
+}
+
+
+.section__titulos {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+} 
+
+
+/**********************************/
+/* 2. Menu
+/**********************************/
+/* .menu-bg {
+	background-color: var(--clr-pink-ligth);
+	padding-bottom: 1%;
+	padding-top: 5px;
+} */
+/* .menu {
+display: flex;
+	background-color: #984de4;
+	width: 100%;
+	height: 80px;
+	
+     margin-top: -0.5%;
+
+
+} */
+
+.menu {
+	background-color: #984de4;
+	width: 100%;
+	height: 80px;
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+
+}
+
+.nav__list {
+	float: right;
+	margin-right: 10px;
+}
+
+.nav__list li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+.nav__link {
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.nav__link.active,
+.nav__link:hover {
+	background: #47b2e4;
+	transition: .05, s;
+}
+
+.logo {
+	width: 180px;
+	height: auto;
+	padding: 10px;
+	display: inline-block;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: #01274d;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+@media (max-width: 952px) {
+	.logo {
+		width: 160px;
+		height: auto;
+		padding: 20px;
+	}
+
+	.nav__list li a {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+	}
+
+	.nav__list {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #049A40;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	.nav__list li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	.nav__list li a {
+		color: #b6c2ce;
+		font-size: 20px;
+	}
+
+	#list li a:active,
+	#list li a:hover {
+		background: none;
+		color: #000000;
+	}
+
+	#check:checked~ul {
+		left: 0;
+	}
+}
+
+
+
+
+
+
+.main{
+display: flex;
+width: 100%;
+
+}
+
+#info{
+display: -webkit-inline-box;
+padding: 61px 0px 0px 0px;
+justify-content: space-evenly;
+justify-items: center;
+}
+
+.caixa{
+flex-direction:row;
+align-items: center;
+margin:1% 35%;
+
+}
+
+#nome{
+width: 435px;
+height: 32px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 7px;
+}
+
+#sobrenome{
+width: 435px;
+height: 32px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 7px;
+}
+
+#DataN{
+width: 435px;
+height: 32px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 7px;
+}
+#telefone{
+width: 435px;
+height: 32px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 7px;
+
+}   
+#email{
+width: 435px;
+height: 32px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 7px;
+}
+
+#ilustra-contato{
+width: 444px;
+height: 444px;
+margin: 0px auto 0 201px;
+}    
+
+#contato {
+height: 46px;
+margin: 0px auto 44px;
+font-weight: 900;
+font-size: 40px;
+color:var(--text-titles);
+}
+
+#termo{
+font-size: 15px;
+}
+.escolha {
+
+display: block;
+position: relative;
+padding-left: 10px;
+margin-bottom:5px;
+cursor: pointer;
+font-size: 15px;
+}
+
+/* posição da bolinha */
+.escolha input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+  
+/* Customizando o botão */
+.checkmark {
+position: absolute;
+top: 3px;
+left: 0;
+height: 10px;
+width: 10px;
+background-color: #eee;
+
+}
+  
+/* qunado passar com o mouse mudar de cor */
+.escolha:hover input ~ .checkmark {
+background-color: #000;
+}
+  
+/*a cor do botão após ser clicado */
+.escolha input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+  
+  
+  
+/* estilo do interior do botão */
+.escolha .checkmark:after {
+top: 9px;
+left: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+background: white;
+}
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    .main{
+        
+        justify-content: center;
+    }
+    #ilustra-contato{
+        display: none;
+        }
+    
+   /* .caixa {
+        width: 100%;
+       margin:auto; 
+       background-image: url(/assets/imagens/ilustra-contato.png);
+       background-repeat: no-repeat;
+    }*/
+
+    #nome {
+       background-color: transparent;
+   }
+   #area {
+       background-color: transparent;
+   }
+   #email {
+       background-color: transparent;
+   }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .main{
+        align-items: center;
+        justify-content: center;
+    }
+    #ilustra-contato{
+        display: none;
+        }
+    
+  /*  .caixa {
+
+       margin:10%;
+       background-image: url(/assets/imagens/ilustra-contato.png);
+       background-repeat: no-repeat;
+    }*/
+    #nome {
+       background-color: transparent;
+   }
+   #area {
+       background-color: transparent;
+   }
+   #email {
+       background-color: transparent;
+   }
+
+}
+
+@media only screen and (max-width:480px) {
+    .main{
+        overflow-x: none;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    #ilustra-contato{
+        display: none;
+        }
+    
+     /*.caixa{
+        /*
+       margin:0px;
+       background-image: url(/assets/imagens/ilustra-contato.png);
+       background-repeat: no-repeat; 
+    }  */
+    #nome {
+        width: 430px;
+       background-color: transparent;
+   }
+   #area {
+       width: 430px;
+       background-color: transparent;
+   }
+   #email {
+       width: 430px;
+       background-color: transparent;
+   }
+    }
+
+
+/**********************************/
+/* 9. Footer
+/**********************************/
+footer {
+	font-family: var(--ff-secondary);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	width: 100%;
+	color: var(--clr-white);
+    
+}
+
+.footer-c {
+	background-color: var(--clr-bluegreen-dark);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 1rem 1rem 1rem 0.5rem;
+    
+}
+
+.footer__contatos h2 {
+	font-size: 1.5rem;
+}
+
+.footer__contatos img {
+	width: 250px;
+	height: auto;
+}
+
+.footer__contatos p {
+	margin-bottom: 0.75rem;
+	text-align: left;
+}
+
+.footer__redes-socias {
+	display: flex;
+	gap: 2rem;
+	margin-top: 1.5rem;
+}
+
+.footer__redes-socias .footer-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3rem;
+	width: 3rem;
+	color: var(--clr-white);
+	border-radius: 50%;
+	box-shadow: 2px 2px 4px black;
+	transition: all 0.4s;
+}
+
+.footer__redes-socias .footer-link:hover {
+	opacity: 0.6;
+}
+
+#instagram {
+	background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#linkedin {
+	background-color: #01274d;
+}
+
+#site {
+	background-color: #4267b3;
+}
+
+.footer__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.footer__list .footer__link {
+	color: #9e9e9e;
+}
+
+.footer__list .footer__link:hover {
+	color: #270747;
+}
+
+#footer_dicas {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+#footer_dicas p {
+	color: #9e9e9e;
+}
+
+#input__dicas {
+	display: flex;
+	align-items: center;
+	caret-color: #9e9e9e;
+	border-radius: 4px;
+}
+
+#input__dicas input {
+	padding: 1.2rem;
+	width: 100%;
+	border: none;
+	background-color: #2d2d3dd8;
+	transition: all 0.4s;
+}
+
+#input__dicas input:hover {
+	background-color: #9a9a9cd8;
+}
+
+#input__dicas button {
+	background-color: #cdf3ff;
+	color: #2d2d3dd8;
+	padding: 1rem;
+	font-size: 1.125rem;
+	border-radius: 0px 4px 4px 0px;
+	cursor: pointer;
+	transition: all 0.4s;
+	border: none;
+}
+
+#input__dicas button:hover {
+	opacity: 0.6;
+}
+
+#footer_copyrigth {
+	background-color: #171717;
+	display: flex;
+	justify-content: center;
+	font-size: 0.9rem;
+	padding: 0.5rem;
+	font-weight: 100px;
+	color: #F5F5F5;
+}
+
+@media screen and (max-width: 768px) {
+	.footer-c {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.footer-c {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 3rem 2rem;
+	}
+}
